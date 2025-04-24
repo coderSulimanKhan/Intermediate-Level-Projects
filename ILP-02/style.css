@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#anim {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(
+    aliceblue,
+    antiquewhite,
+    aqua,
+    aquamarine,
+    azure,
+    beige,
+    bisque,
+    black,
+    blanchedalmond,
+    blue,
+    blueviolet,
+    brown,
+    burlywood,
+    cadetblue,
+    chartreuse,
+    chocolate,
+    coral,
+    cornflowerblue,
+    cornsilk,
+    crimson,
+    cyan,
+    darkblue,
+    darkcyan,
+    darkgoldenrod,
+    darkgray,
+    darkgreen,
+    darkkhaki,
+    darkmagenta,
+    darkolivegreen,
+    darkorange,
+    darkorchid,
+    darkred,
+    darksalmon,
+    darkseagreen,
+    darkslateblue,
+    darkslategray,
+    darkturquoise,
+    darkviolet,
+    deeppink,
+    deepskyblue,
+    dimgray,
+    dodgerblue,
+    firebrick,
+    floralwhite,
+    forestgreen,
+    fuchsia,
+    gainsboro,
+    ghostwhite,
+    gold,
+    goldenrod,
+    gray,
+    green,
+    greenyellow,
+    honeydew,
+    hotpink,
+    indianred,
+    indigo,
+    ivory,
+    khaki,
+    lavender,
+    lavenderblush,
+    lawngreen,
+    lemonchiffon,
+    lightblue,
+    lightcoral,
+    lightcyan,
+    lightgoldenrodyellow,
+    lightgray,
+    lightgreen,
+    lightpink,
+    lightsalmon,
+    lightseagreen,
+    lightskyblue,
+    lightslategray,
+    lightsteelblue,
+    lightyellow,
+    lime,
+    limegreen,
+    linen,
+    magenta,
+    maroon,
+    mediumaquamarine,
+    mediumblue,
+    mediumorchid,
+    mediumpurple,
+    mediumseagreen,
+    mediumslateblue,
+    mediumspringgreen,
+    mediumturquoise,
+    mediumvioletred,
+    midnightblue,
+    mintcream,
+    mistyrose,
+    navajowhite,
+    navy,
+    oldlace,
+    olive,
+    olivedrab,
+    orange,
+    orangered,
+    orchid,
+    palegoldenrod,
+    palegreen,
+    paleturquoise,
+    palevioletred,
+    papayawhip,
+    peachpuff,
+    peru,
+    pink,
+    plum,
+    powderblue,
+    purple,
+    rebeccapurple,
+    red,
+    rosybrown,
+    royalblue,
+    saddlebrown,
+    salmon,
+    sandybrown,
+    seagreen,
+    seashell,
+    sienna,
+    silver,
+    skyblue,
+    slateblue,
+    slategray,
+    snow,
+    springgreen,
+    steelblue,
+    tan,
+    teal,
+    thistle,
+    tomato,
+    turquoise,
+    violet,
+    wheat,
+    white,
+    whitesmoke,
+    yellow,
+    yellowgreen
+  );
+  border-radius: 100%;
+}
+
+.card {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  /* bottom: 300px; */
+  background-image: linear-gradient(#000, #222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0px;
+  transition: all 1s;
+  z-index: 100;
+}
+
+.card h1 {
+  background-image: linear-gradient(90deg, goldenrod, pink);
+  background-clip: text;
+  color: transparent;
+}
+
+.card button {
+  font-size: 18px;
+  padding: 4px 10px;
+  background-image: linear-gradient(goldenrod, red);
+  border: none;
+  border-radius: 4px;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(red, goldenrod);
+}
+
+.card #close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: fit-content;
+  padding: 20px;
+  height: 70px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #999, 0px 0px 5px white inset;
+  color: white;
+  text-shadow: 0px 0px 100px goldenrod;
+  transition: all 1s;
+  opacity: 0;
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Fetch Data",
+    "version": "1.0.0",
+    "description": "This is a small project which fetch data and show on the document.",
+    "main": "index.html",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Suliman Khan",
+    "license": "ISC"
+}
